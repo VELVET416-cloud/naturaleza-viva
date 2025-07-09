@@ -1,0 +1,97 @@
+/* Estilo para juega.html */
+
+body {
+  background: linear-gradient(to bottom, #e0f7fa, #e8f5e9);
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #4e4e4e;
+}
+
+/* Tarjetas iguales */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+
+/* Juego de arrastrar */
+.drop-target {
+  min-height: 100px;
+  background-color: #f1f8e9;
+  border: 2px dashed #81c784;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+img[draggable="true"] {
+  cursor: grab;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+img[draggable="true"]:hover {
+  transform: scale(1.1);
+}
+
+/* Botón de verificación */
+button.btn-success {
+  background-color: #388e3c;
+  border: none;
+  font-weight: bold;
+}
+
+button.btn-success:hover {
+  background-color: #2e7d32;
+  transform: scale(1.03);
+}
+
+/* Quiz texto */
+#resultado {
+  font-size: 1.1rem;
+  color: #1b5e20;
+}
+
+/* Responsive cards fix */
+@media (max-width: 767px) {
+  .card-img-top {
+    height: 140px;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
+}

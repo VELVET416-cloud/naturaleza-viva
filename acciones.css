@@ -1,0 +1,165 @@
+/* Estilo personalizado para acciones.html */
+
+header {
+  background-image: url('/image\ copy\ 15.png');
+  background-size: cover;
+  background-position: center;
+ 
+    }
+
+h1, h2, h3 {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: #f1f8e9;
+  border: none;
+  border-left: 5px solid #81c784;
+  margin-bottom: 6px;
+  transition: background 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #dcedc8;
+}
+
+.btn {
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-success {
+  background-color: #66bb6a;
+  border: none;
+  color: white;
+}
+
+.btn-outline-success {
+  border: 2px solid #66bb6a;
+  color: #388e3c;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.shadow {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.bg-light {
+  background-color: #f1f8e9 !important;
+}
+
+/* Botones mágicos */
+button.btn {
+  min-width: 180px;
+}
+
+button.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgba(129, 199, 132, 0.4);
+}
+
+/* Carrusel */
+.carousel-inner img {
+  border-radius: 15px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Tarjetas */
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #1b5e20;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  .list-group-item {
+    font-size: 0.95rem;
+  }
+  button.btn {
+    font-size: 0.95rem;
+  }
+  .card-img-top {
+    max-height: 160px;
+  }
+}
+
+form .form-control {
+  border-radius: 10px;
+  border: 2px solid #a5d6a7;
+}
+
+form .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 187, 106, 0.25);
+  border-color: #66bb6a;
+}
+
+form button {
+  font-weight: bold;
+  padding: 10px 25px;
+}
+
+.btn-verde-1 {
+  background-color: #81c784; /* Verde suave */
+  color: white;
+}
+
+.btn-verde-2 {
+  background-color: #66bb6a; /* Verde medio */
+  color: white;
+}
+
+.btn-verde-3 {
+  background-color: #4caf50; /* Verde vivo */
+  color: white;
+}
+
+.btn-verde-4 {
+  background-color: #388e3c; /* Verde profundo */
+  color: white;
+}
+
+.btn-verde-5 {
+  background-color: #2e7d32; /* Verde bosque */
+  color: white;
+}
+
+/* Estilo común para todos */
+.btn-verde-1, .btn-verde-2, .btn-verde-3, .btn-verde-4, .btn-verde-5 {
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn-verde-1:hover,
+.btn-verde-2:hover,
+.btn-verde-3:hover,
+.btn-verde-4:hover,
+.btn-verde-5:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}

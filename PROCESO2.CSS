@@ -1,0 +1,40 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom, #e0f2f1, #a5d6a7);
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 5px #2e7d32;
+}
+
+.section-title {
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
